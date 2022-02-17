@@ -1,4 +1,14 @@
 
+
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,9 +20,76 @@
 
 }
 
+.backgr{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image:url(img01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slide 20s infinite;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.content h1{
+    color: white;
+    font-size: 70px;
+    letter-spacing: 17px;
+}
+
+.content h3{
+    color: white;
+    background-color: black;
+    padding: 10px 24px;
+    font-size: 40px;
+    letter-spacing: 6px;
+    text-decoration:none;
+    border-radius: 10px;
+
+}
+
+p{
+    font-size: 20px;
+    max-width: 80%;
+    margin: auto;
+    padding: 40px;
+    line-height: 30px;
+    text-align: justify;
+
+}
+
+@keyframes slide{
+    0%{
+        background-image:url(img01.jpg);
+    }
+    25%{
+        background-image:url(img02.jpg);
+    }
+
+    50%{
+        background-image:url(img03.jpg);
+    }
+
+    75%{
+        background-image:url(img04.jpg);
+    }
+ 
+
+
+}
+
 header{
     background-color: black;
-    
 }
 
 .logo{
@@ -24,72 +101,6 @@ header{
     margin: auto;
     color: white;
 }
-
-.blog-post{
-    background-color: #2f2f2f;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    cursor: pointer;
-
-}
-
-
-.poster{
-    width: calc(33% - 10px);
-    overflow: hidden;
-}
-
-.post-image{
-    width: 100%;
-    border-radius: 6px;
-    transition:  .3s linear;
-}
-
-.post-content{
-    background-color: white;
-    margin: 0 20px;
-    padding: 30px;
-    border-radius: 6px;
-    transform: translateY(-60px);
-    transition: .3s linear;
-}
-
-.post-content h3{
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.date{
-    font-size: 15px;
-    font-style: bold;
-    color: blue;   
-}
-
-.poster:hover .post-image{
-    transform: translateY(20px);
-}
-
-.poster:hover .post-content{
-    transform: translateY(-80px);
-}
-
-@media screen and (max-width: 1200px){
-   .blog-post{
-       justify-content: center;
-   }
-   
-    .poster{
-        width: min(600px 100%);
-    }
-}
-
-
 
 .menu-icon{
     width: 50px;
