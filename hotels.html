@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="hotels.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Travel Guide</h1>
+            <div class="menu-icon">
+                <i class="fas fa-align-right"></i>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="blog-post">
+        <div class="poster">
+            <img src="colomboh.jpeg" alt="photo of colombo" class="post-image">
+            <div class="post-content">
+                <a href="https://www.booking.com/city/lk/colombo.html?aid=356980;label=gog235jc-1DCAIohQFCAmxrSDNYA2iFAYgBAZgBMbgBF8gBDNgBA-gBAfgBAogCAagCA7gCz928kAbAAgHSAiQ3Njg1OWVhZC02NjJiLTRkNjUtYWI2Yi1jOGIwMTE1MDYwZWPYAgTgAgE;sid=5733b98c6f43ea5b31a0ceb8cf1d79e2"><h3>01.Colombo</h3></a>
+                <span class="description">140 hotels</span>
+            </div>
+        </div>
+
+        <div class="poster">
+            <img src="k2.jpg" alt="photo of kandy" class="post-image">
+            <div class="post-content">
+                <a href="https://www.booking.com/city/lk/kandy.html?aid=356980;label=gog235jc-1DCAIohQFCAmxrSDNYA2iFAYgBAZgBMbgBF8gBDNgBA-gBAfgBAogCAagCA7gCz928kAbAAgHSAiQ3Njg1OWVhZC02NjJiLTRkNjUtYWI2Yi1jOGIwMTE1MDYwZWPYAgTgAgE;sid=5733b98c6f43ea5b31a0ceb8cf1d79e2"><h3>02.Kandy</h3></a>
+                <span class="description">265 hotels</span>
+            </div>
+
+        </div>
+
+        <div class="poster">
+            <img src="m5.jpg" alt="photo of mirissa" class="post-image">
+            <div class="post-content">
+                <a href="https://www.booking.com/city/lk/mirissa-south.html?aid=356980;label=gog235jc-1DCAIohQFCAmxrSDNYA2iFAYgBAZgBMbgBF8gBDNgBA-gBAfgBAogCAagCA7gCz928kAbAAgHSAiQ3Njg1OWVhZC02NjJiLTRkNjUtYWI2Yi1jOGIwMTE1MDYwZWPYAgTgAgE;sid=5733b98c6f43ea5b31a0ceb8cf1d79e2"><h3>03.Mirissa</h3></a>
+                <span class="description">88 hotels</span>
+            </div>
+
+        </div>
+
+         
+    </div>
+
+    <div class="navigation-menu">
+        <li><a href="travelguide.html">Home</a> </li>
+        <li><a href="post.html">Best Places To Visit</a> </li>
+        <li><a href="#">Festivals</a> </li>
+        <li><a href="#">Hottels</a> </li>
+        <li><a href="#">Shopping Malls</a> </li>
+        <li><a href="#">Train Shadual</a> </li>
+        <li><a href="#">About</a> </li>
+        <li><a href="#">Contact Us</a> </li>
+    </div>
+    
+    <script>
+        $(".menu-icon").click(function(){
+            $(this).toggleClass("active");
+            $(".navigation-menu").toggleClass("active");
+            $(".menu-icon i").toggleClass("fa-times");
+        });
+    </script>
+
+    
+</body>
+</html>
