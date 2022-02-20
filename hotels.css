@@ -24,6 +24,14 @@ header{
     color: white;
 }
 
+.h1 {
+    
+    text-align: center;
+    color: rgb(245, 241, 241);
+    font-size: 15px;
+    text-justify: auto;
+  }
+
 .blog-post{
     background-color: #2f2f2f;
     min-height: 100vh;
@@ -51,7 +59,7 @@ header{
 }
 
 .post-content{
-    background-color: white;
+    background-color: rgb(27,11,57);
     margin: 0 20px;
     padding: 30px;
     border-radius: 6px;
@@ -69,6 +77,20 @@ header{
     font-style: bold;
     color: blue;   
 }
+.button {
+    background-color: #6228e9;
+    border: none;
+    color: rgb(249, 245, 250);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 35px 32px;
+    cursor: pointer;
+   
+  }
+
 
 .poster:hover .post-image{
     transform: translateY(20px);
