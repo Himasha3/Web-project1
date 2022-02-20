@@ -54,7 +54,7 @@ header{
 }
 
 .post-content{
-    background-color: white;
+    background-color: rgb(27,11,57);
     margin: 0 20px;
     padding: 30px;
     border-radius: 6px;
@@ -240,34 +240,3 @@ p{
     transition-delay: 1.6s;
 }
 
-footer{
-    background-color: black;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-
-}
-
-.copyright{
-    margin-bottom: 10px;
-    margin-top: 20px;
-    font-size: 15px;
-}
-.sm a{
-    font-size: 30px;
-    display: inline-block;
-    text-align: center;
-    width: 100px;
-    height: 20px;
-    line-height: 10px;
-    color: aqua;
-    margin: 0 16px;
-    transition: .4s linear;
-    position: relative;
-
-}
-
-.sm a:hover{
-    opacity: .9;
-    transform: scale(1.1)
-}
