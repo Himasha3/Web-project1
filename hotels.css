@@ -32,7 +32,7 @@ header{
     text-justify: auto;
   }
 
-.blog-post{
+.blog-h{
     background-color: #2f2f2f;
     min-height: 100vh;
     display: flex;
@@ -47,18 +47,18 @@ header{
 }
 
 
-.poster{
+.h{
     width: calc(33% - 10px);
     overflow: hidden;
 }
 
-.post-image{
+.h-image{
     width: 100%;
     border-radius: 6px;
     transition:  .3s linear;
 }
 
-.post-content{
+.h-content{
     background-color: rgb(27,11,57);
     margin: 0 20px;
     padding: 30px;
@@ -67,7 +67,7 @@ header{
     transition: .3s linear;
 }
 
-.post-content h3{
+.h-content h3{
     font-size: 16px;
     margin-bottom: 10px;
 }
@@ -75,7 +75,7 @@ header{
 .description{
     font-size: 15px;
     font-style: bold;
-    color: black;   
+    color: white;   
 }
 .button {
     background-color: #6228e9;
@@ -92,20 +92,20 @@ header{
   }
 
 
-.poster:hover .post-image{
+.h:hover .h-image{
     transform: translateY(20px);
 }
 
-.poster:hover .post-content{
+.h:hover .h-content{
     transform: translateY(-80px);
 }
 
 @media screen and (max-width: 1200px){
-   .blog-post{
+   .blog-h{
        justify-content: center;
    }
    
-    .poster{
+    .h{
         width: min(600px 100%);
     }
 }
