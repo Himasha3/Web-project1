@@ -72,10 +72,10 @@ header{
     margin-bottom: 10px;
 }
 
-.date{
+.description{
     font-size: 15px;
     font-style: bold;
-    color: blue;   
+    color: black;   
 }
 .button {
     background-color: #6228e9;
