@@ -25,3 +25,30 @@ header{
     color: white;
 }
 
+.blog-festival{
+    background-color: #2f2f2f;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    cursor: pointer;
+
+}
+
+
+.festival{
+    width: calc(33% - 10px);
+    overflow: hidden;
+}
+
+.festival-image{
+    width: 800px;
+    height:400px;
+    border-radius: 6px;
+    transition:  .3s linear;
+}
+
