@@ -188,5 +188,37 @@ p{
     transition: .6s linear;
 }
 
+.navigation-menu.active li:nth-child(1) a{
+    transition-delay: .2s;
+}
+
+.navigation-menu.active li:nth-child(2) a{
+    transition-delay: .4s;
+}
+
+.navigation-menu.active li:nth-child(3) a{
+    transition-delay: .6s;
+}
+
+.navigation-menu.active li:nth-child(4) a{
+    transition-delay: .8s;
+}
+
+.navigation-menu.active li:nth-child(5) a{
+    transition-delay: 1s;
+}
+
+.navigation-menu.active li:nth-child(6) a{
+    transition-delay: 1.2s;
+}
+
+.navigation-menu.active li:nth-child(7) a{
+    transition-delay: 1.4s;
+}
+
+.navigation-menu.active li:nth-child(8) a{
+    transition-delay: 1.6s;
+}
+
 
 
