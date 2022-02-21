@@ -73,3 +73,22 @@ header{
     color: blue;   
 }
 
+.festival:hover .festival-image{
+    transform: translateY(20px);
+}
+
+.festival:hover .festival-content{
+    transform: translateY(-80px);
+}
+
+@media screen and (max-width: 1200px){
+   .festival-post{
+       justify-content: center;
+   }
+   
+    .festival{
+        width: min(600px 100%);
+    }
+}
+
+
