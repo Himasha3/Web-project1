@@ -138,4 +138,26 @@ header{
     overflow: hidden;
 }
 
+.navigation-menu a{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    transform: translateY(40px);
+}
+
+.navigation-menu a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 15px;
+    background: orangered;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+    z-index: -1;
+    transition: .3s linear;
+}
+
 
