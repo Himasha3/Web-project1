@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream:style.css
+
 
 *{
     margin: 0;
@@ -139,9 +139,9 @@ header{
     background-image: url(navpic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    top: 0%;
+    top: 10px;
     right: -100%;
-    display: table;
+    display: flexbox;
     text-align: center;
     justify-content: center;
     transition: .4s;
