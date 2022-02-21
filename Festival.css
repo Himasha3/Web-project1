@@ -160,4 +160,33 @@ header{
     transition: .3s linear;
 }
 
+.navigation-menu a:hover::before{
+    width: 100%;
+}
+
+p{
+    max-width: 80%;
+    margin: auto;
+    padding: 40px 0;
+    font-size: 20px;
+    line-height: 1.4em;
+    text-align: justify;
+}
+
+.menu-icon.active{
+    background: #f1f1f1;
+    color: #2c3a47;
+}
+
+.navigation-menu.active{
+    right: 0%;
+    transition: .4s linear;
+}
+
+.navigation-menu.active a{
+    transform: translateY(0);
+    transition: .6s linear;
+}
+
+
 
