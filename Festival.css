@@ -52,3 +52,24 @@ header{
     transition:  .3s linear;
 }
 
+
+.festival-content{
+    background-color: white;
+    margin: 0 20px;
+    padding: 30px;
+    border-radius: 6px;
+    transform: translateY(-60px);
+    transition: .3s linear;
+}
+
+.festival-content h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.date{
+    font-size: 15px;
+    font-style: bold;
+    color: blue;   
+}
+
