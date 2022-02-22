@@ -43,35 +43,54 @@ header{
 .festival{
     width: calc(33% - 10px);
     overflow: hidden;
+
 }
 
 .festival-image{
-    width: 800px;
-    height:400px;
+    width: 100%;
+    line-height: 50em;
     border-radius: 6px;
     transition:  .3s linear;
 }
 
-
 .festival-content{
-    background-color: white;
+    background-color: rgb(27,11,57);
     margin: 0 20px;
     padding: 30px;
     border-radius: 6px;
     transform: translateY(-60px);
     transition: .3s linear;
+    position: -webkit-sticky;
 }
 
 .festival-content h3{
     font-size: 16px;
     margin-bottom: 10px;
+    color: lightgreen;
 }
 
-.date{
+.description{
     font-size: 15px;
     font-style: bold;
-    color: blue;   
+    color: white;
+    position: inherit;
+
 }
+
+.button {
+    background-color: #6228e9;
+    border: none;
+    color: rgb(249, 245, 250);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 35px 32px;
+    cursor: pointer;
+    border-radius: 8px;
+   
+  }
 
 .festival:hover .festival-image{
     transform: translateY(20px);
@@ -82,7 +101,7 @@ header{
 }
 
 @media screen and (max-width: 1200px){
-   .festival-post{
+   .blog-festival{
        justify-content: center;
    }
    
@@ -90,6 +109,7 @@ header{
         width: min(600px 100%);
     }
 }
+
 
 
 .menu-icon{
@@ -115,8 +135,7 @@ header{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: black;
-    background-image: url(img05.jpg);
+    background-image: url(navpic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     top: 0%;
@@ -152,7 +171,7 @@ header{
     position: absolute;
     width: 0%;
     height: 15px;
-    background: orangered;
+    background: rgb(14, 218, 233);
     bottom: 0;
     left: 0;
     border-radius: 20px;
