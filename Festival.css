@@ -237,7 +237,6 @@ p{
 
 .navigation-menu.active li:nth-child(8) a{
     transition-delay: 1.6s;
-
 }
 footer{
     background-color: black;
@@ -267,6 +266,9 @@ footer{
     font-size: 15px;
     
 }
+
+
+
 
 
 
