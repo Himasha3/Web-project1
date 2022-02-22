@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactus/Travelguide</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Menu</h1>
+            <div class="menu-icon">
+                <i class="fas fa-align-right"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="box">
+        <form onsubmit="sendEmail(); reset(); return; false;">
+            <h3> Get In Touch</h3>
+            <input type="text" id="name" placeholder="Your Name" required="required">
+            <input type="email" id="email" placeholder="Your Email" required="required">
+            <input type="text" id="phone" placeholder="Your Phone Number" required="required">
+            <textarea id="message" rows="4" placeholder="Your Message Here..."></textarea>
+            <button type="submit">Send It</button>
+        </form>
+    </div>
+    
+    <script src="https://smtpjs.com/v3/smtp.js"> </script>
+    <script>
+        function sendEmail(){
+                Email.send({
+                    
+                    Host : "smtp.gmail.com",
+                    Username : "webdevalop@gmail.com",
+                    Password : "F84B932FCD5C56E2F89A980812A759169119",
+                    To : 'webdevalop@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "A New Message From Travel Guide",
+                    Body : "Name:" + document.getElementById("name").value 
+                        +"<br> Email:" + document.getElementById("email").value
+                        +"<br> Phone Number:" + document.getElementById("phone").value
+                        +"<br> Message:" + document.getElementById("message").valeu
+                }).then(
+                message => alert("Message Sent Succesfully")
+                );
+        }
+
+    </script>
+
+        <div class="navigation-menu">
+            <li><a href="travelguide.html">Home</a> </li>
+            <li><a href="post.html">Best Places To Visit</a> </li>
+            <li><a href="Festival.html">Festivals</a> </li>
+            <li><a href="hotels.html">Hottels</a> </li>
+            <li><a href="shopping.html">Shopping Malls</a> </li>
+            <li><a href="">Train Shadual</a> </li>
+            <li><a href="about.html">About</a> </li>
+            <li><a href="contact.html">Contact Us</a> </li>
+
+        </div>
+
+        <script>
+            $(".menu-icon").click(function(){
+                $(this).toggleClass("active");
+                $(".navigation-menu").toggleClass("active");
+                $(".menu-icon i").toggleClass("fa-times");
+            });
+    </script>
+
+<!--footer-->
+<footer>
+       
+    <a href="travelguide.html"><img src="logo.jpg"   class="footer-logo"></a>
+         
+            <div class="copyright">
+            
+               &copy; 2022 | Created & Designed By Web Devalopment Group NO.13 <br>
+                        21.1 Computer Science Batch Of NSBM Green Univercity<br>
+                          All Rights Reserved &copy; By Travel Guide 
+           </div>
+           
+       </div>
+   </footer>
+
+</body>
+</html>
