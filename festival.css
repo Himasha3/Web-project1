@@ -54,12 +54,12 @@ header{
 
 .festival-content{
     background-color: rgb(27,11,57);
-    margin: 0 20px;
-    padding: 30px;
+    margin: 0 25px;
+    padding: 25px;
     border-radius: 6px;
     transform: translateY(-60px);
     transition: .3s linear;
-    position: -webkit-sticky;
+    
 }
 
 .festival-content h3{
@@ -154,6 +154,7 @@ header{
 .navigation-menu li{
     margin: 20px ;
     overflow: hidden;
+    margin-top: 40px;
 }
 
 .navigation-menu a{
